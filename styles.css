@@ -1,0 +1,309 @@
+
+.container{
+    text-align: center;
+}
+
+.main-heading{
+    text-align: center;
+    font-family: "Montserrat-Regular";
+    padding-top: 14px;
+    font-size: 34px;
+}
+
+.car-titles{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: -5%;
+}
+
+.miles{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    padding-top: 2rem;
+    color: dodgerblue;
+}
+
+.miles-one{
+    font-size: 34px;
+    font-family: "Montserrat-Regular";
+}
+.miles-one-desc{
+    margin-top: 5px;
+}
+.miles-type{
+    display: flex;
+    gap: 4px;
+}
+
+.animate-text {
+    animation: fade-in 1s;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+.vl {
+    border-left: 1px solid lightgrey;
+    height: 100px;
+
+}
+
+.calculator{
+    justify-content: space-around;
+    display: flex;
+    margin-top: 2rem;
+    align-items: self-end;
+}
+
+.wheels{
+    display: flex;
+    gap: 20px;
+}
+
+.input-number{
+    display: flex;
+    border: 1px solid lightgrey;
+    height: 60px;
+    background-color: #e8e8e85e;
+    align-items: center;
+    width: 200px;
+}
+
+.input-number .input{
+    border: none;
+    background: none;
+    flex: 1;
+    font-family: "Montserrat-Regular";
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+.input-number .unit{
+    flex: 2;
+    font-family: "Montserrat-Regular";
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.input-number .arrows{
+    flex: 1;
+    padding-right: 10px;
+}
+
+.arrow-up{
+    border-bottom: 2px solid #e8e8e8;
+    cursor: pointer;
+}
+
+.arrow-down{
+    cursor: pointer;
+}
+
+label{
+    text-align: center;
+    font-family: "Montserrat-Regular";
+    color: #9b9696;
+    margin: 0 auto;
+    text-align: left;
+    display: block;
+    padding-bottom: 15px;
+}
+
+.input-number-image{
+    display: flex;
+}
+
+.ac-container{
+    border-radius: 50%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 2px solid rgb(241 241 241 / 40%);
+    width: 110px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(241 241 241 / 40%);
+    cursor: pointer;
+    position: relative;
+    top: 1.5rem;
+
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.ac-container:after {
+    content: "";
+    background: #e8e8e85e;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .ac-container:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+.ac-inner-container{
+    border-radius: 50%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 2px solid rgb(241 241 241 / 40%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 100px;
+    height: 98px;
+}
+
+.ac-inner-blue{
+    background-image: linear-gradient(360deg, #1d90ff, #0048ff);
+}
+
+.ac-inner-red{
+    background-image: linear-gradient(360deg, #e81515, #ffb400);
+}
+
+.ac-inner-white{
+    background-color: white;
+}
+
+.ac-innertext-grey{
+    color: #cccccc;
+}
+
+.ac-innertext-white{
+    color: white;
+}
+
+.ac-innertext{
+    font-size: 9px;
+    font-family: Montserrat-SemiBold;
+}
+
+.ac-image{
+    height: 25px;
+}
+
+.wheel-input .input-number  {
+    font-size: 16px;
+}
+
+.disable{
+    opacity: 0.5;
+    cursor: auto;
+}
+
+.wheel-border-selected{
+    border: 2px solid #1d90ff;
+}
+
+.wheels{
+    cursor: pointer;
+}
+
+.desc{
+    text-align: justify;
+    font-family: Montserrat-Medium;
+    font-size: 14px;
+    color: #9b9696;
+    left: 4%;
+    position: absolute;
+    right: 4%;
+    margin-top: 4rem;
+}
+
+.wheels .wheels-small img{
+    height: 40px;
+}
+
+.wheels .wheels-large img{
+    height: 45px;
+}
+
+.input-number .input.wheel-input{
+    flex: 0;
+}
+
+.wheels > div{
+    justify-content: center;
+    gap: 12px;
+}
+
+.input-number:hover{
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 50%);
+}
+
+.car-image {
+    width: 80vw;
+    margin-left:10vw;
+}
+.car {
+    width: 100%;
+    object-fit: scale-down;
+}
+
+.wheel1-19 {
+    object-fit: scale-down;
+    position: relative;
+    top: -157px;
+    left: -15.5%;
+    height: 108px;
+}
+.wheel2-19 {
+    object-fit: scale-down;
+    position: relative;
+    top: -157px;
+    left: 14%;
+    height: 108px;
+}
+.wheel1-21 {
+    object-fit: scale-down; 
+    position: relative;
+    top: -157px; 
+    left: -15.5%;
+    height: 114px;
+}
+.wheel2-21 {
+    object-fit: scale-down; 
+    position: relative;
+    top: -157px;
+    left: 13.5%;
+    height: 114px;
+}
+    
+.rotate {
+    animation: rotation 1s infinite linear;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(359deg);
+    }
+    to {
+        transform: rotate(Odeg);
+    }
+}

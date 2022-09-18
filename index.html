@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="font-styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="data/metric-100D.js"></script>
+    <script src="data/metric-P100D.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="main-heading">Range per Charge</div>
+  
+    <div> 
+        <div class="car-image">
+            <img class="car" src="images/car-base@2x.png" alt="car">
+            <img id="wheel1" class="wheel1-19 rotate" src="images/car-wheel@2x.png" alt="wheel"/> 
+            <img id ="wheel2" class="wheel2-19 rotate" src="images/car-wheel@2x.png" alt="wheel"/>
+        </div>
+          
+    </div>
+
+        
+    <div class="car-titles">
+        <div>
+            <img src="images/100d.png" alt="Tesla car">
+        </div>
+        <div>
+            <img src="images/p100d.png" alt="Tesla car">
+        </div>
+    </div>
+    <div class="miles">
+        <div class="miles-type">
+            <div id="miles-100D" class="miles-one">849</div>
+            <div class="miles-one-desc">KM</div>
+        </div>    
+
+        <div class="miles-type">
+            <div id="miles-P100D" class="miles-one">819</div>
+            <div class="miles-one-desc">KM</div>
+        </div>   
+    </div>
+    <div class="calculator">
+        <div>
+            <label>Speed</label>
+            <div class="input-number speed">
+                    <div id="speed-input" class="input">70</div>
+                    <div class="unit">KMH</div>
+                    <div class="arrows">
+                        <div class="arrow-up" id="speed-input-up"><img id="arrow-up-image-speed" src="images/icon-thin-chevron-up.svg" alt="Tesla car"></div>
+                        <div class="arrow-down" id="speed-input-down"><img class="disable" id="arrow-down-image-speed" src="images/icon-thin-chevron-down.svg" alt="Tesla car"></div>
+                    </div>
+            </div>
+        </div>
+        <div class="vl"></div>
+        <div>
+            <label>outside Temperature</label>
+            <div class="input-number">
+                <div id="temp-input" class="input">20</div>
+                <div class="unit">°</div>
+                <div class="arrows">
+                    <div class="arrow-up" id="temp-input-up"><img id="arrow-up-image-temp" src="images/icon-thin-chevron-up.svg" alt="Tesla car"></div>
+                    <div class="arrow-down" id="temp-input-down"><img id="arrow-down-image-temp" src="images/icon-thin-chevron-down.svg" alt="Tesla car"></div>
+                </div>
+            </div>
+        </div>
+        <div class="ac">
+            <button class="ac-container" id="acSwitch">
+                <div id="ac-inner-container" class="ac-inner-container ac-inner-white">
+                    <div class="ac-innertext ac-innertext-grey" id="acSwitch-text">AC OFF</div>
+                    <img id="ac-image" class="ac-image" src="images/icon-fan-gray.svg" alt="Tesla car">
+                </div>
+            </button>
+            
+        </div>
+        <div class="vl"></div>
+        <div>
+            <label>Wheels</label>
+            <div class="wheels">
+                    <div id="wheels-small" class="wheel-border-selected input-number wheels-small">
+                        <div class="input-number-image">
+                            <img src="images/icon-wheel.svg" alt="Tesla car">
+                        </div>
+                        <div id="temp-input" class="input wheel-input">19<i>″</i></div>
+                    </div>                
+                    <div id="wheels-large" class="input-number wheels-large">
+                        <div class="input-number-image">
+                            <img src="images/icon-wheel.svg" alt="Tesla car">
+                        </div>
+                        <div id="temp-input" class="input wheel-input">21<i>″</i></div>
+                    </div> 
+            </div>
+        </div>
+    </div>
+    <div class="desc">The actual amount of range that you experience will vary based on your particular use conditions. Your vehicle range is also dependent on other conditions, such as vehicle configuration, battery age and condition, driving style and operating, environmental and climate conditions. See how some of these particular use conditions may affect your range in our simulation model.</div>
+</div>
+
+</body>
+</html>
